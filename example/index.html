@@ -1,0 +1,21 @@
+<html>
+  <body>
+    <!-- Actual content -->
+    <div data-bind="template: { name: 'greeting', data: model }"></div>
+    <div data-bind="template: { name: 'edit', data: model }"></div>
+
+    <!-- Template includes -->
+    <script id='greeting' type='text/html' src='_greeting.haml'></script>
+    <script id='edit' type='text/html' src="_edit.haml"></script>    
+
+    <!-- Scripts -->
+    
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.2/underscore-min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.string/2.3.0/underscore.string.min.js"></script>
+    <script src="https://raw.github.com/uglyog/clientside-haml-js/master/lib/haml.min.js" type="text/javascript"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/knockout/2.1.0/knockout-min.js'></script>
+    <script src="../ko.haml.js"></script>
+    <script src='app.js'></script>
+  </body>
+</html>
